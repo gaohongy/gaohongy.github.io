@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.3/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.3/dist/index.umd.min.js"></script><script>(()=>{setTimeout(()=>{const{markmap:Fe,mm:ur}=window,Fr=new Fe.Toolbar;Fr.attach(ur);const Dr=Fr.render();Dr.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(Dr)})})()</script><script>((B,S,M,_)=>{const I=B();window.mm=I.Markmap.create("svg#mindmap",(S||I.deriveOptions)(_),M)})(()=>window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[1,2]},"content":"机器学习","children":[{"type":"heading","depth":1,"payload":{"lines":[3,4]},"content":"学习目标分","children":[{"type":"list_item","depth":2,"payload":{"lines":[5,6]},"content":"回归问题：模型输出是连续标量"},{"type":"list_item","depth":2,"payload":{"lines":[6,7]},"content":"分类问题：模型输出是一个或多个类别标签"},{"type":"list_item","depth":2,"payload":{"lines":[7,8]},"content":"排序问题：模型输出是经过排序的对象列表"}]},{"type":"heading","depth":1,"payload":{"lines":[9,10]},"content":"训练数据特性/学习方式分","children":[{"type":"list_item","depth":2,"payload":{"lines":[11,12]},"content":"监督学习：输入数据带有标签"},{"type":"list_item","depth":2,"payload":{"lines":[12,13]},"content":"半监督学习：输入数据部分标签，是监督学习的延伸"},{"type":"list_item","depth":2,"payload":{"lines":[13,14]},"content":"非监督学习：输入数据没有标签，而是通过算法来推断数据的内在联系"},{"type":"list_item","depth":2,"payload":{"lines":[14,15]},"content":"强化学习：输入数据作为对模型的反馈，强调如何基于环境而行动，以取得最大化的预期利益"}]},{"type":"heading","depth":1,"payload":{"lines":[16,17]},"content":"模型复杂程度分","children":[{"type":"list_item","depth":2,"payload":{"lines":[18,19]},"content":"线性模型：决策边界为直线"},{"type":"list_item","depth":2,"payload":{"lines":[19,20]},"content":"非线性模型：决策边界为非直线"}]},{"type":"heading","depth":1,"payload":{"lines":[21,22]},"content":"模型功能分","children":[{"type":"list_item","depth":2,"payload":{"lines":[23,24]},"content":"生成模型：关注输入样本和标签的联合概率分布"},{"type":"list_item","depth":2,"payload":{"lines":[24,25]},"content":"判别模型：关注给定输入样本的前提下标签的条件概率"}]},{"type":"heading","depth":1,"payload":{"lines":[26,27]},"content":"功能分","children":[{"type":"heading","depth":2,"payload":{"lines":[27,28]},"content":"回归算法","children":[{"type":"list_item","depth":3,"payload":{"lines":[28,29]},"content":"线性回归"},{"type":"list_item","depth":3,"payload":{"lines":[29,30]},"content":"逻辑回归"},{"type":"list_item","depth":3,"payload":{"lines":[30,31]},"content":"多元自适应回归（MARS）"},{"type":"list_item","depth":3,"payload":{"lines":[31,32]},"content":"本地散点平滑估计（LOESS）"}]},{"type":"heading","depth":2,"payload":{"lines":[33,34]},"content":"基于实例的学习算法","children":[{"type":"list_item","depth":3,"payload":{"lines":[34,35]},"content":"K - 邻近算法（kNN）"},{"type":"list_item","depth":3,"payload":{"lines":[35,36]},"content":"学习矢量化（LVQ）"},{"type":"list_item","depth":3,"payload":{"lines":[36,37]},"content":"自组织映射算法（SOM）"},{"type":"list_item","depth":3,"payload":{"lines":[37,38]},"content":"局部加权学习算法（LWL）"}]},{"type":"heading","depth":2,"payload":{"lines":[39,40]},"content":"正则化算法","children":[{"type":"list_item","depth":3,"payload":{"lines":[40,41]},"content":"岭回归（Ridge Regression）"},{"type":"list_item","depth":3,"payload":{"lines":[41,42]},"content":"LASSO（Least Absolute Shrinkage and Selection Operator）"},{"type":"list_item","depth":3,"payload":{"lines":[42,43]},"content":"Elastic Net"},{"type":"list_item","depth":3,"payload":{"lines":[43,44]},"content":"最小角回归（LARS）"}]},{"type":"heading","depth":2,"payload":{"lines":[45,46]},"content":"决策树算法","children":[{"type":"list_item","depth":3,"payload":{"lines":[46,47]},"content":"分类和回归树（CART）"},{"type":"list_item","depth":3,"payload":{"lines":[47,48]},"content":"ID3 算法 (Iterative Dichotomiser 3)"},{"type":"list_item","depth":3,"payload":{"lines":[48,49]},"content":"C4.5 和 C5.0"},{"type":"list_item","depth":3,"payload":{"lines":[49,50]},"content":"CHAID（Chi-squared Automatic Interaction Detection(）"},{"type":"list_item","depth":3,"payload":{"lines":[50,51]},"content":"随机森林（Random Forest）"},{"type":"list_item","depth":3,"payload":{"lines":[51,52]},"content":"多元自适应回归样条（MARS）"},{"type":"list_item","depth":3,"payload":{"lines":[52,53]},"content":"梯度推进机（Gradient Boosting Machine， GBM）"}]},{"type":"heading","depth":2,"payload":{"lines":[54,55]},"content":"贝叶斯算法","children":[{"type":"list_item","depth":3,"payload":{"lines":[55,56]},"content":"朴素贝叶斯"},{"type":"list_item","depth":3,"payload":{"lines":[56,57]},"content":"高斯朴素贝叶斯"},{"type":"list_item","depth":3,"payload":{"lines":[57,58]},"content":"多项式朴素贝叶斯"},{"type":"list_item","depth":3,"payload":{"lines":[58,59]},"content":"AODE（Averaged One-Dependence Estimators）"},{"type":"list_item","depth":3,"payload":{"lines":[59,60]},"content":"贝叶斯网络（Bayesian Belief Network）"}]},{"type":"heading","depth":2,"payload":{"lines":[61,62]},"content":"基于核的算法","children":[{"type":"list_item","depth":3,"payload":{"lines":[62,63]},"content":"支持向量机（SVM）"},{"type":"list_item","depth":3,"payload":{"lines":[63,64]},"content":"径向基函数（Radial Basis Function ，RBF)"},{"type":"list_item","depth":3,"payload":{"lines":[64,65]},"content":"线性判别分析（Linear Discriminate Analysis ，LDA)"}]},{"type":"heading","depth":2,"payload":{"lines":[66,67]},"content":"聚类算法","children":[{"type":"list_item","depth":3,"payload":{"lines":[67,68]},"content":"K - 均值"},{"type":"list_item","depth":3,"payload":{"lines":[68,69]},"content":"K - 中位数"},{"type":"list_item","depth":3,"payload":{"lines":[69,70]},"content":"EM 算法"},{"type":"list_item","depth":3,"payload":{"lines":[70,71]},"content":"分层聚类"}]},{"type":"heading","depth":2,"payload":{"lines":[72,73]},"content":"关联规则学习","children":[{"type":"list_item","depth":3,"payload":{"lines":[73,74]},"content":"Apriori 算法"},{"type":"list_item","depth":3,"payload":{"lines":[74,75]},"content":"Eclat 算法"}]},{"type":"heading","depth":2,"payload":{"lines":[76,77]},"content":"神经网络","children":[{"type":"list_item","depth":3,"payload":{"lines":[77,78]},"content":"感知器"},{"type":"list_item","depth":3,"payload":{"lines":[78,79]},"content":"反向传播算法（BP）"},{"type":"list_item","depth":3,"payload":{"lines":[79,80]},"content":"Hopfield 网络"},{"type":"list_item","depth":3,"payload":{"lines":[80,81]},"content":"径向基函数网络（RBFN）"}]},{"type":"heading","depth":2,"payload":{"lines":[82,83]},"content":"深度学习","children":[{"type":"list_item","depth":3,"payload":{"lines":[83,84]},"content":"深度玻尔兹曼机（DBM）"},{"type":"list_item","depth":3,"payload":{"lines":[84,85]},"content":"卷积神经网络（CNN）"},{"type":"list_item","depth":3,"payload":{"lines":[85,86]},"content":"递归神经网络（RNN、LSTM）"},{"type":"list_item","depth":3,"payload":{"lines":[86,87]},"content":"栈式自编码算法（Stacked Auto-Encoder）"}]},{"type":"heading","depth":2,"payload":{"lines":[88,89]},"content":"降维算法","children":[{"type":"list_item","depth":3,"payload":{"lines":[89,90]},"content":"主成分分析法（PCA）"},{"type":"list_item","depth":3,"payload":{"lines":[90,91]},"content":"主成分回归（PCR）"},{"type":"list_item","depth":3,"payload":{"lines":[91,92]},"content":"偏最小二乘回归（PLSR）"},{"type":"list_item","depth":3,"payload":{"lines":[92,93]},"content":"萨蒙映射"},{"type":"list_item","depth":3,"payload":{"lines":[93,94]},"content":"多维尺度分析法（MDS）"},{"type":"list_item","depth":3,"payload":{"lines":[94,95]},"content":"投影寻踪法（PP）"},{"type":"list_item","depth":3,"payload":{"lines":[95,96]},"content":"线性判别分析法（LDA）"},{"type":"list_item","depth":3,"payload":{"lines":[96,97]},"content":"混合判别分析法（MDA）"},{"type":"list_item","depth":3,"payload":{"lines":[97,98]},"content":"二次判别分析法（QDA）"},{"type":"list_item","depth":3,"payload":{"lines":[98,99]},"content":"灵活判别分析法（Flexible Discriminant Analysis，FDA)"}]},{"type":"heading","depth":2,"payload":{"lines":[100,101]},"content":"集成算法","children":[{"type":"list_item","depth":3,"payload":{"lines":[101,102]},"content":"Boosting"},{"type":"list_item","depth":3,"payload":{"lines":[102,103]},"content":"Bagging"},{"type":"list_item","depth":3,"payload":{"lines":[103,104]},"content":"AdaBoost"},{"type":"list_item","depth":3,"payload":{"lines":[104,105]},"content":"堆叠泛化（混合）"},{"type":"list_item","depth":3,"payload":{"lines":[105,106]},"content":"GBM 算法"},{"type":"list_item","depth":3,"payload":{"lines":[106,107]},"content":"GBRT 算法"},{"type":"list_item","depth":3,"payload":{"lines":[107,108]},"content":"随机森林"}]},{"type":"heading","depth":2,"payload":{"lines":[109,110]},"content":"其他算法","children":[{"type":"list_item","depth":3,"payload":{"lines":[110,111]},"content":"特征选择算法"},{"type":"list_item","depth":3,"payload":{"lines":[111,112]},"content":"性能评估算法"},{"type":"list_item","depth":3,"payload":{"lines":[112,113]},"content":"自然语言处理"},{"type":"list_item","depth":3,"payload":{"lines":[113,114]},"content":"计算机视觉"},{"type":"list_item","depth":3,"payload":{"lines":[114,115]},"content":"推荐系统"},{"type":"list_item","depth":3,"payload":{"lines":[115,116]},"content":"强化学习"},{"type":"list_item","depth":3,"payload":{"lines":[116,117]},"content":"迁移学习"}]}]}]},{"colorFreezeLevel":3})</script>
+</body>
+</html>
+
+<!-- ---
+markmap:
+  colorFreezeLevel: 3
+---
+
+# 机器学习
+
+## 学习目标分
+
+- 回归问题：模型输出是连续标量
+- 分类问题：模型输出是一个或多个类别标签
+- 排序问题：模型输出是经过排序的对象列表
+
+## 训练数据特性/学习方式分
+
+- 监督学习：输入数据带有标签
+- 半监督学习：输入数据部分标签，是监督学习的延伸
+- 非监督学习：输入数据没有标签，而是通过算法来推断数据的内在联系
+- 强化学习：输入数据作为对模型的反馈，强调如何基于环境而行动，以取得最大化的预期利益
+
+## 模型复杂程度分
+
+- 线性模型：决策边界为直线
+- 非线性模型：决策边界为非直线
+
+## 模型功能分
+
+- 生成模型：关注输入样本和标签的联合概率分布
+- 判别模型：关注给定输入样本的前提下标签的条件概率
+
+## 功能分
+### 回归算法
+- 线性回归
+- 逻辑回归
+- 多元自适应回归（MARS）
+- 本地散点平滑估计（LOESS）
+
+### 基于实例的学习算法
+- K - 邻近算法（kNN）
+- 学习矢量化（LVQ）
+- 自组织映射算法（SOM）
+- 局部加权学习算法（LWL）
+
+### 正则化算法
+- 岭回归（Ridge Regression）
+- LASSO（Least Absolute Shrinkage and Selection Operator）
+- Elastic Net
+- 最小角回归（LARS）
+
+### 决策树算法
+- 分类和回归树（CART）
+- ID3 算法 (Iterative Dichotomiser 3)
+- C4.5 和 C5.0
+- CHAID（Chi-squared Automatic Interaction Detection(）
+- 随机森林（Random Forest）
+- 多元自适应回归样条（MARS）
+- 梯度推进机（Gradient Boosting Machine， GBM）
+
+### 贝叶斯算法
+- 朴素贝叶斯
+- 高斯朴素贝叶斯
+- 多项式朴素贝叶斯
+- AODE（Averaged One-Dependence Estimators）
+- 贝叶斯网络（Bayesian Belief Network）
+
+### 基于核的算法
+- 支持向量机（SVM）
+- 径向基函数（Radial Basis Function ，RBF)
+- 线性判别分析（Linear Discriminate Analysis ，LDA)
+
+### 聚类算法
+- K - 均值
+- K - 中位数
+- EM 算法
+- 分层聚类
+
+### 关联规则学习
+- Apriori 算法
+- Eclat 算法
+
+### 神经网络
+- 感知器
+- 反向传播算法（BP）
+- Hopfield 网络
+- 径向基函数网络（RBFN）
+
+### 深度学习
+- 深度玻尔兹曼机（DBM）
+- 卷积神经网络（CNN）
+- 递归神经网络（RNN、LSTM）
+- 栈式自编码算法（Stacked Auto-Encoder）
+
+### 降维算法
+- 主成分分析法（PCA）
+- 主成分回归（PCR）
+- 偏最小二乘回归（PLSR）
+- 萨蒙映射
+- 多维尺度分析法（MDS）
+- 投影寻踪法（PP）
+- 线性判别分析法（LDA）
+- 混合判别分析法（MDA）
+- 二次判别分析法（QDA）
+- 灵活判别分析法（Flexible Discriminant Analysis，FDA)
+
+### 集成算法
+- Boosting
+- Bagging
+- AdaBoost
+- 堆叠泛化（混合）
+- GBM 算法
+- GBRT 算法
+- 随机森林
+
+### 其他算法
+- 特征选择算法
+- 性能评估算法
+- 自然语言处理
+- 计算机视觉
+- 推荐系统
+- 强化学习
+- 迁移学习 -->
