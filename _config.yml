@@ -30,6 +30,9 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:  # 基目录是source目录，所以以下路径是表明跳过source目录下的哪一文件
   - mindmap/*
+  - pdf/*
+  - pdfjs/*
+  - pdfjs/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
